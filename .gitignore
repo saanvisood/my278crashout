@@ -21,10 +21,9 @@ cmake_install.cmake
 
 # Ignore compiled executables (extensionless files) inside week folders
 # Ignore any file that has no '.' in its name (no extension)
-# but still keep .c, .h, .txt, etc.
 week*/**/[^.]*
 
-# Keep important source files
+# Re-include important source and text files
 !**/*.c
 !**/*.h
 !**/*.txt
