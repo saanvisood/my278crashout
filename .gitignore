@@ -1,35 +1,34 @@
-# Compiled binaries and executables
-*.exe
-*.out
+# IDE & editor settings
+.idea/
+.vscode/
+
+# CMake build outputs
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+
+# Compiled objects & binaries
 *.o
 *.obj
+*.exe
+*.out
 *.a
 *.so
-*.dylib
 *.dll
+*.dylib
 
-# Common executable names (no extension on Unix/Linux)
-a.out
+# Ignore compiled executables (extensionless files) inside week folders
+# Ignore any file that has no '.' in its name (no extension)
+week*/**/[^.]*
 
-# IDE and editor files
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
+# Re-include important source and text files
+!**/*.c
+!**/*.h
+!**/*.txt
+!**/*.md
+
+# OS-specific
 .DS_Store
-
-# Build directories
-build/
-bin/
-obj/
-dist/
-
-# Debug files
-*.dSYM/
-*.pdb
-*.ilk
-
-# Core dumps
-core
-core.*
+Thumbs.db
