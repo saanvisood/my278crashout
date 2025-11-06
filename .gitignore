@@ -24,12 +24,12 @@ cmake_install.cmake
 # but still keep .c, .h, .txt, etc.
 week*/**/[^.]*
 
-# OS-specific
-.DS_Store
-Thumbs.db
-
 # Keep important source files
 !**/*.c
 !**/*.h
 !**/*.txt
 !**/*.md
+
+# OS-specific
+.DS_Store
+Thumbs.db
