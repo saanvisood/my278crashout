@@ -1,0 +1,34 @@
+# === IDE / Project Settings ===
+.idea/
+
+# === CMake build outputs ===
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+
+# === Compiled binaries & object files ===
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.so
+*.dll
+*.dylib
+
+# Ignore any file with no extension, but NOT:
+# - hidden files (.gitignore, .DS_Store)
+# - C source/header files
+# - CMakeLists.txt or other text/code
+# - folders
+week*/**/[!._]*
+
+# === Logs / Temp ===
+*.log
+*.tmp
+
+# === OS-specific files ===
+.DS_Store
+Thumbs.db
