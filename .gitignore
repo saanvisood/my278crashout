@@ -8,8 +8,14 @@
 *.dylib
 *.dll
 
-# Common executable names (no extension on Unix/Linux)
-a.out
+# Executables without extensions (Unix/Linux/macOS)
+# This catches files with the same name as .c files but no extension
+*
+!/**/
+!*.*
+!Makefile
+!README
+!LICENSE
 
 # IDE and editor files
 .vscode/
