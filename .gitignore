@@ -1,15 +1,15 @@
-# Ignore IDE / editor settings
+# IDE & editor settings
 .idea/
 .vscode/
 
-# Ignore build outputs
+# CMake build outputs
 cmake-build-*/
 CMakeFiles/
 CMakeCache.txt
 Makefile
 cmake_install.cmake
 
-# Ignore compiled binaries (no extension) and object files
+# Compiled objects & binaries
 *.o
 *.obj
 *.exe
@@ -18,8 +18,18 @@ cmake_install.cmake
 *.so
 *.dll
 *.dylib
-**/[!._]*
 
-# OS-specific junk
+# Ignore compiled executables (extensionless files) inside week folders
+# Ignore any file that has no '.' in its name (no extension)
+# but still keep .c, .h, .txt, etc.
+week*/**/[^.]*
+
+# OS-specific
 .DS_Store
 Thumbs.db
+
+# Keep important source files
+!**/*.c
+!**/*.h
+!**/*.txt
+!**/*.md
