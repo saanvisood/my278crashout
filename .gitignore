@@ -1,14 +1,15 @@
-# === IDE / Project Settings ===
+# Ignore IDE / editor settings
 .idea/
+.vscode/
 
-# === CMake build outputs ===
+# Ignore build outputs
 cmake-build-*/
 CMakeFiles/
 CMakeCache.txt
 Makefile
 cmake_install.cmake
 
-# === Compiled binaries & object files ===
+# Ignore compiled binaries (no extension) and object files
 *.o
 *.obj
 *.exe
@@ -17,18 +18,8 @@ cmake_install.cmake
 *.so
 *.dll
 *.dylib
+**/[!._]*
 
-# Ignore any file with no extension, but NOT:
-# - hidden files (.gitignore, .DS_Store)
-# - C source/header files
-# - CMakeLists.txt or other text/code
-# - folders
-week*/**/[!._]*
-
-# === Logs / Temp ===
-*.log
-*.tmp
-
-# === OS-specific files ===
+# OS-specific junk
 .DS_Store
 Thumbs.db
